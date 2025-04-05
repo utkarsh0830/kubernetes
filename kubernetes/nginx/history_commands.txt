@@ -281,3 +281,65 @@
   281  kubectl scale deployment/nginx-deployment -n nginx --replicas=5
   282  kubectl get pods -n nginx -o wide
   283  history > filename.txt
+  284  cat filename.txt 
+  285* rn filename.txt history_commands.txmv t
+  286  mv filename.txt history_commands.txt
+  287  cat history_commands.txt 
+  288  clear
+  289  ls
+  290  cd ..
+  291  ls
+  292  cd ..
+  293  ls
+  294  git init
+  295  git add .
+  296  git commit -m "Kubernetes Deployement and Replicas Created"
+  297  git push -u origin master
+  298  cd kubernetes/nginx/
+  299  ls
+  300  clear
+  301  vim job.yml
+  302  kubectl delete deployment.yml 
+  303  ls
+  304  kubectl delete -f deployment.yml 
+  305  kubectl apply -f job.yml 
+  306  vim job.yml
+  307  kubectl apply -f job.yml 
+  308  cat job.yml 
+  309  vim job.yml
+  310  kubectl apply -f job.yml 
+  311  vim job.yml
+  312  kubectl apply -f job.yml 
+  313  cat job.yml 
+  314  kubectl get pods -n nginx
+  315  kubectl logs pod/demo-job-vdz6d - n nginx
+  316  kubectl logs -f pod/demo-job-vdz6d - n nginx
+  317  kubectl logs pod/demo-job-vdz6d -n nginx
+  318  kubectl delete -f job.yml 
+  319  vim cron-job.yml
+  320  kubectl apply -d cron-job.yml
+  321  kubectl apply -f cron-job.yml
+  322  vim cron-job.yml
+  323  cat cron-job.yml
+  324  vim cron-job.yml
+  325  kubectl apply -f cron-job.yml
+  326  cat cron-job.yml
+  327  vim cron-job.yml 
+  328  ls
+  329  kubectl apply -f cron-job.yml
+  330  kubectl get pods -n nginx
+  331  kubectl logs pod/minute-backup-29064264-lj2d9 -n nginx
+  332  kubectl get pods -n nginx
+  333  sudo mkdir -p /demo-data
+  334  echo "Test file" | sudo tee /demo-data/file1.txt
+  335  ls
+  336  kubectl logs pod/minute-backup-29064264-lj2d9 -n nginx
+  337  kubectl get pods -n nginx
+  338  kubectl logs pod/minute-backup-29064264-lj2d9 -n nginx
+  339  kubectl logs pod/minute-backup-29064268-cdmb6 -n nginx
+  340  kubectl logs pod/minute-backup-29064270-dv7zv -n nginx
+  341  history -a
+  342  ls
+  343  comm -13 <(sort my_history.txt) <(history | awk '{$1=""; print substr($0,2)}' | sort -u) >> history_commands.txt
+  344  kubectl delete -f cron-job.yml 
+  345  history > history_commands.txt 
