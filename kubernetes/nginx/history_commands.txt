@@ -1,0 +1,283 @@
+    1  clear
+    2  git clone --depth 1 https://github.com/sqlmapproject/sqlmap.git sqlmap-dev
+    3  cd sqlmap-dev/
+    4  clear
+    5  python sqlmap.py -h
+    6  apt-get install python3
+    7  sudo su
+    8  minikube start --driver=docker
+    9  clear
+   10  pwd
+   11  ls
+   12  clear
+   13  sudo apt update
+   14  sudo apt-get install docker.io
+   15  ps aux | grep unattended-upgr
+   16  sudo kill -9 3970
+   17  sudo rm /var/lib/dpkg/lock-frontend
+   18  sudo rm /var/cache/apt/archives/lock
+   19  sudo dpkg --configure -a
+   20  sudo rm /var/lib/dpkg/lock-frontend
+   21  sudo rm /var/cache/apt/archives/lock
+   22  sudo apt-get install docker.io
+   23  sudo kill -9 4321
+   24  sudo rm /var/cache/apt/archives/lock
+   25  sudo apt-get upgrade
+   26  sudo apt-get install docker.io
+   27  clear
+   28  docker ps
+   29  sudo docker ps
+   30  sudo su
+   31  minikube start --driver=docker --vm=true 
+   32  sudo usermod -aG docker $USER && newgrp docker
+   33  clear
+   34  cd minicube-cluster/
+   35  minikube start --driver=docker
+   36  kubectl get nodes --context kind-tws-cluster
+   37  kubectl get nodes
+   38  kubectl get pods
+   39  kubectl
+   40  vagrant down
+   41  clear
+   42  kubectl get nodes
+   43  clear
+   44  ls
+   45  cd kind-cluster/
+   46  ls
+   47  cat config.yml 
+   48  kind create cluster --config kind-cluster-config.yaml --name my-kind-cluster
+   49  ls
+   50  kind create cluster --config config.yaml --name my-kind-cluster
+   51  ls
+   52  kind create cluster --config config.yml --name my-kind-cluster
+   53  kind create cluster --name=tws-cluster --config=config.yml
+   54  kubectl cluster
+   55  kubectl cluster-info
+   56  clear
+   57  kind delete cluster --name tws-cluster
+   58  kind create cluster --name tws-cluster --config=config.yml
+   59  kubectl cluster-info --context kind-tws-cluster
+   60  kubectl cluster-info 
+   61  kubectl get nodes
+   62  kubectl get nm
+   63  kubectl get namespaces
+   64  kubectl get pods
+   65  kubectl get pods -n kube-system
+   66  kubectl create ns nginx
+   67  kubectl get ns
+   68  kubectl run nginx --image=nginx
+   69  kubectl get pods
+   70  kubectl get pods -n ns
+   71  kubectl get pods -n nginx
+   72  kubectl delete pod nginx
+   73  kubectl run nginx --image=nginx -n nginx
+   74  kubectl get pods -n nginx
+   75  kubectl get pods
+   76  kubectl delete pod nginx -n nginx
+   77  kubectl delete ns nginx
+   78  ls
+   79  cd ..
+   80  clear
+   81  ls
+   82  mkdir kubernetes
+   83  cd kubernetes/
+   84  mkdir nginx | cd nginx
+   85  mkdir nginx
+   86  ls
+   87  cd nginx/
+   88  ls | ls-a
+   89  ls | ls-l
+   90  ls-a
+   91  ls | ls -la
+   92  ls
+   93  cd ..
+   94  clear
+   95  ls
+   96  ls-la
+   97  ls -la
+   98  ls | ls -la
+   99  ls \ ls -la
+  100  ls
+  101  cd nginx/
+  102  clear
+  103  cd ..
+  104  ls; ls -la
+  105  clear
+  106  cd nginx/
+  107  vim namespace.yml
+  108  kubectl apply -f namespace.yml 
+  109  ls
+  110  cd ..
+  111  clear
+  112  ls
+  113  cd ..
+  114  ls
+  115  cd k
+  116  cd kind-cluster/
+  117  ls
+  118  cat config.yml 
+  119  cd ..
+  120  cd minicube-cluster/
+  121  cat minikube-linux-arm64 
+  122  clear
+  123  ls
+  124  cd ..
+  125  ls
+  126  cat script.sh 
+  127  cd sqlmap-dev/
+  128  ls
+  129  cd ..
+  130  clear
+  131  ls
+  132  mv script.sh kind-cluster/
+  133  mv script.sh -r kind-cluster/
+  134  ls
+  135  mv script.sh kind-cluster/
+  136  sudo mv script.sh kind-cluster/
+  137  clear
+  138  ls
+  139  git init
+  140  git add kind-cluster/ kubernetes/ minicube-cluster/
+  141  git commit -m "kubernetes setup"
+  142  git config --global user.email "utkarshagrawal970@gmail.com"
+  143  git commit -m "kubernetes setup"
+  144  git status
+  145  git add kind-cluster/ kubernetes/ minicube-cluster/ sqlmap-dev/
+  146  git commit -m "kubernetes setup"
+  147  git remote add origin https://github.com/utkarsh0830/kubernetes.git
+  148  git push -u origin main
+  149  git config --global user.name "utkarsh0830"
+  150  git push -u origin main
+  151  git branch
+  152  git push -u origin master
+  153  ls
+  154  rm -r minicube-cluster/
+  155  ls
+  156  sudo rm -r minicube-cluster/
+  157  l
+  158  ls
+  159  git init
+  160  git add kind-cluster/ kubernetes/
+  161  git commit -m "kubernetes setup"
+  162  git push -u origin master
+  163  nt@vagrant:~$ 
+  164  git push -u origin master
+  165  git rm --cached minicube-cluster/minikube-linux-arm64
+  166  sudo apt install git-filter-repo
+  167  git push --force
+  168  git push -u origin master
+  169  sudo apt install git-filter-repo
+  170  snap apt install git-filter-repo
+  171  apt install snap
+  172  sudo apt install snap
+  173  snap apt install git-filter-repo
+  174  snap install git-filter-repo
+  175  sudo snap install git-filter-repo
+  176  git filter-repo --path minicube-cluster/minikube-linux-arm64 --invert-paths
+  177  ls -a
+  178  echo "minicube-cluster/minikube-linux-arm64" >> .gitignore
+  179  git add .gitignore
+  180  git commit -m "Ignore minikube binary"
+  181  git push
+  182  git push --set-upstream origin master
+  183  cd ~/kubernetes
+  184  ls
+  185  git filter-repo --path minicube-cluster/minikube-linux-arm64 --invert-paths
+  186  clear
+  187  ls
+  188  cd ..
+  189  ls
+  190  cd ~/kubernetes
+  191  ls -l
+  192  cd ..
+  193  ls
+  194  ls -la
+  195  clear
+  196  rm -rf .git
+  197  git init
+  198  ls
+  199  mv snap /opt
+  200  sudo move snap /opt
+  201  sudo mv snap /opt
+  202  ls
+  203  clear
+  204  ls
+  205  sudo mv sqlmap-dev/ /opt
+  206  clear
+  207  ls
+  208  git add .
+  209  ls -l
+  210  clear
+  211  rm -rf .git
+  212  clear
+  213  ls
+  214  mkdir Kubernetes
+  215  mv kind-cluster/ kubernetes/ Kubernetes/
+  216  sudo mv kind-cluster/ kubernetes/ Kubernetes/
+  217  ls
+  218  cd ..
+  219  ls
+  220  cd vagrant/
+  221  ls
+  222  cd Kubernetes/
+  223  ls
+  224  cd ..
+  225  clear
+  226  ls
+  227  cd Kubernetes/
+  228  ls
+  229  clear
+  230  ls
+  231  git init
+  232  git add kind-cluster/ kubernetes/
+  233  git commit -m "Kubernetes Setup"
+  234  git remote add origin https://github.com/utkarsh0830/kubernetes.git
+  235  git push -u origin master
+  236  ls
+  237  cd k
+  238  cd kubernetes/
+  239  ls
+  240  cd nginx/
+  241  ls
+  242  clear
+  243  vim pod.yml
+  244  kubectl apply -f pod.yml 
+  245  kubectl get pods -n ns
+  246  kubectl get pod -n ns
+  247  kubectl get pod -n nginx
+  248  kubectl get pods -n nginx
+  249  kubectl exec -it nginx-pod -n nginx -- bash
+  250  l
+  251  ls
+  252  vim deployement.yml
+  253  kubectl delete -f pod.yml 
+  254  kubectl get pods -n nginx
+  255  vim deployement.yml
+  256  kubectl apply -f deployement.yml 
+  257  vim deployement.yml
+  258  cat deployement.yml 
+  259  vim deployement.yml
+  260  kubectl apply -f deployement.yml 
+  261  kubectl get ns
+  262  kubectl apply -f deployment.yml
+  263  ls
+  264  kubectl apply -f deployement.yml
+  265  vim deployment.yml
+  266  kubectl apply -f deployment.yml
+  267  cat deployement.yml 
+  268  ls
+  269  rm deployement.yml 
+  270  clear
+  271  ls
+  272  kubectl get deploument -n nginx
+  273  kubectl get deployment -n nginx
+  274  kubectl get pods -n nginc
+  275  kubectl get pods -n nginx
+  276  kubectl scale deployment/nginx-deployment -n nginx --replicas=5
+  277  kubectl get pods -n nginx
+  278  kubectl scale deployment/nginx-deployment -n nginx --replicas=1
+  279  kubectl get pods -n nginx
+  280  kubectl get pods -n nginx -o wide
+  281  kubectl scale deployment/nginx-deployment -n nginx --replicas=5
+  282  kubectl get pods -n nginx -o wide
+  283  history > filename.txt
