@@ -19,4 +19,12 @@ spec:
         image: nginx:latest
         ports:
         - containerPort: 80
+        volumeMounts:
+        - mountPath: /var/www/html
+          name: local-pv
+
+      volumes:
+       - name: local-pv
+         persistentVolumeClaim:
+                 claimName: local-pv-claim
 
